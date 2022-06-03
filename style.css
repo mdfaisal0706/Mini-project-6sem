@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  height: 100vh;
+}
+
+.container {
+  /* display: flex;
+  flex-direction: column; */
+  display: grid;
+  grid-template-rows: 1fr 10fr;
+  gap: 2rem;
+  height: inherit;
+  padding: 2rem 4rem;
+  font-size: 2rem;
+}
+
+.logo-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 3rem;
+  background-color: red;
+}
+
+.search-history {
+  background-color: blue;
+  padding: 1.5rem 3rem;
+}
+.history-list {
+  list-style: none;
+}
+
+.search-results {
+  /* display:grid; */
+  /* grid-template-rows: 1fr 9fr; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  gap: 3rem;
+  background-color: green;
+}
+
+.search-box {
+  padding: 2rem;
+  position: relative;
+  /* border: 2px solid black; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* justify-self: center; */
+  /* align-self: center; */
+}
+.search-box--inner {
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
+.search-text-box {
+  display: block;
+  padding: 0.5rem 0.8rem;
+  width: 35%; /* just  for adding animation*/
+  min-width: 15rem;
+  /* border: none; */
+  border: 1px solid white;
+
+  font-size: 1.6rem;
+  height: 100%;
+  transition: width 1s ease-in-out;
+}
+.search-text-box:focus {
+  width: 80%;
+  outline: none;
+}
+.search-button {
+  text-align: center;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100%;
+}
+.search-icon {
+  font-size: 3rem;
+}
+
+.results-box {
+  padding: 2rem;
+  border: 2px solid black;
+}
+
+.bookmarks {
+  background-color: yellow;
+}
+
+.container-inner {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  /* height: 70vh; */
+}
